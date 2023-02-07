@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css" />
+   <script src="./script.js" defer></script>
+   <title>Fintech</title>
+</head>
+
+<body>
+
+   <main>
+
+      <section>
+
+         <div id="changeLogin" class="changeLogin">
+
+            <button type="button" class="buttonChangeLogin" id="btLog" onclick="aparece_login()">
+               <h2 class="login_titles">Login</h2>
+            </button>
+
+            <button type="button" class="buttonChangeLogin" id="btReg" onclick="aparece_registro()">
+               <h2 class="login_titles">Registrar</h2>
+            </button>
+
+         </div>
+
+
+         <div id="login" class="login">
+
+            <label class="login_box">
+               <span>e-mail</span>
+               <input id="blye" type="email" name="email" class="input">
+            </label>
+
+            <label class="login_box">
+               <span>senha</span>
+               <input id="bley" type="password" name="password" class="input">
+            </label>
+
+            <div class="login_icons">
+
+               <button type="button" class="icon_button">
+                  <img src="./IMG/facebook-01.svg" alt="Facebook">
+               </button>
+
+               <button type="button" class="icon_button" onclick="tiralogin()">
+                  <img src="./IMG/google-01.svg" alt="Google">
+               </button>
+
+            </div>
+
+            <!-- <a id="btnlink" href="home.html"> -->
+               <button type="button" class="login_button" disabled onclick="window.location.href='home.html'">
+                  <span>Login</span>
+
+               </button>
+            <!-- </a> -->
+            <a href="#" class="login_link">Não consegue iniciar sessão?</a>
+
+         </div>
+
+         <div id="registro" class="registro">
+
+            <label class="login_box">
+               <span>Nome completo</span>
+               <input id="blye" type="text" name="text" class="input">
+            </label>
+
+            <label class="login_box">
+               <span>Insira um e-mail</span>
+               <input id="bley" type="email" name="email" class="input">
+            </label>
+
+            <label class="login_box">
+               <span>Insira uma senha</span>
+               <input id="bley" type="password" name="password" class="input">
+            </label>
+
+            <label class="login_box">
+               <span>Repita a senha</span>
+               <input id="bley" type="password" name="password" class="input">
+            </label>
+
+
+            <div class="login_icons">
+
+               <button type="button" class="icon_button">
+                  <img src="./IMG/facebook-01.svg" alt="Facebook">
+               </button>
+
+               <button type="button" class="icon_button" onclick="tiralogin()">
+                  <img src="./IMG/google-01.svg" alt="Google">
+               </button>
+
+            </div>
+
+            <button type="button" class="login_button" disabled onclick="login()">
+               <span>Registrar</span>
+            </button>
+
+         </div>
+
+      </section>
+
+   </main>
+
+
+</body>
+
+</html>

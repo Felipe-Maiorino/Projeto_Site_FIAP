@@ -1,0 +1,5 @@
+arquivo = open("D:\\ESTUDOS\\ArquivoTexto.txt", encoding="UTF-8")
+
+print(arquivo.readlines())
+
+arquivo.close()

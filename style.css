@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+
+}
+
+
+section {
+
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    padding: clamp(35px, 8%, 70px);
+    background-color: rgb(253, 253, 253);
+    box-shadow: 3px 0px 25px rgba(0,0,0,0.55);
+
+}
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-animation: fadein 0.5s;
+
+
+}
+
+.registro {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    -webkit-animation: fadein 0.5s;
+
+}
+
+
+
+.changeLogin {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.login_titles {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+    margin: 20px 0 90px
+}
+
+.buttonChangeLogin {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.login_title {
+    color: rgb(35, 35, 35);
+    margin-bottom: 30px;
+    margin-top: 190px;
+}
+
+.login_box {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0, 9em;
+    padding: 25px 10px 10px;
+    font-weight: 700;
+    color: rgb(35, 35, 35);
+}
+
+.login_box span {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(180, 180, 180);
+    margin: 20px;
+    cursor: text;
+    transition: all 200ms ease;
+
+}
+
+.input:focus {
+    background-color: rgb(247, 247, 247);
+    border: 2px solid rgb(7, 190, 223);
+}
+
+.login_box .span-active {
+    font-size: 0.7em;
+    margin: 8px 10px;
+}
+
+.login_icons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login_icons img {
+    width: 20px;
+
+}
+
+.icon_button {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.login_icons .icon_button:nth-child(1) {
+    background-color: rgb(41, 77, 165);
+}
+
+.login_icons .icon_button:nth-child(2) {
+    background-color: rgb(220, 67, 53);
+}
+
+.login_button {
+    margin: 15px 0 50px;
+    font-size: 1.0em;
+    font-weight: 800;
+    width: 120px;
+    height: 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(8, 137, 243);
+    border-radius: 15px;
+    border: none;
+    text-decoration-color: white;
+}
+
+.login_button span{
+    color: whitesmoke;
+}
+
+.login_button:disabled span{
+    color:rgb(97, 97, 97);
+}
+
+
+.login_button:disabled {
+    margin: 15px 0 50px;
+    font-size: 1.0em;
+    font-weight: 800;
+    width: 120px;
+    height: 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(180, 180, 180);
+    border-radius: 15px;
+    border: none;
+}
+
+
+
+
+.login_link {
+    font-weight: 400;
+    display: flex;
+    margin-bottom: 10px;
+
+
+}
+
+
+#felipe {
+    display: flex;
+}
+
+body {
+    width: 100%;
+    background-image: url(IMG/pexels-andrea-piacquadio-853151.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+#btLog:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(41, 77, 165);
+
+}
+
+#btReg:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(41, 77, 165)
+}
+
+#btnlink {
+    text-decoration: none;
+}
